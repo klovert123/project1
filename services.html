@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Fuel Delivery System - Services</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>FDS SYSTEM</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="Blog.html" class="link">Blog</a></li>
+                <li><a href="services.html" class="link active">Services</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="form.html">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav><br><br><br><br><br>
+
+    <!-- Hero Section -->
+    <div class="hero-section services-hero">
+        <div class="container text-center">
+            <h1>Our Services</h1>
+            <p>Delivering fuel to your doorstep with efficiency and reliability.</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What We Offer</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-gas-pump bx-lg mb-3"></i>
+                    <h3>On-Demand Fuel Delivery</h3>
+                    <p>Request fuel delivery at any time and our team will deliver it to your specified location promptly.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-tachometer bx-lg mb-3"></i>
+                    <h3>Fast Service</h3>
+                    <p>We pride ourselves on our quick response times to ensure that you are never left waiting for fuel.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-shield bx-lg mb-3"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Our payment gateway is secure and hassle-free, making the process of ordering fuel seamless.</p>
+                </div>
+                <div class="col-md-4 text-center mt-4">
+                    <i class="bx bx-group bx-lg mb-3"></i>
+                    <h3>Corporate Services</h3>
+                    <p>We offer special services tailored for corporate clients to ensure their fuel needs are met efficiently.</p>
+                </div>
+                <div class="col-md-4 text-center mt-4">
+                    <i class="bx bx-cog bx-lg mb-3"></i>
+                    <h3>Fuel Management Solutions</h3>
+                    <p>Get comprehensive fuel management solutions designed to optimize your fuel usage and save costs.</p>
+                </div>
+                <div class="col-md-4 text-center mt-4">
+                    <i class="bx bx-support bx-lg mb-3"></i>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is available around the clock to assist you with any queries or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Get In Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" placeholder="Your Email" required class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" rows="5" placeholder="Your Message" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Fuel Delivery System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

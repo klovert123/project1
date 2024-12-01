@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body> <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="admin_dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="manage_users.php"><i class="fas fa-users"></i> Manage Users</a>
+        <a href="view_orders.php"><i class="fas fa-box"></i> View Orders</a>
+        <a href="manage_vehicles.php"><i class="fas fa-truck"></i> Manage Trucks</a>
+        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <div id="main">
+        <button class="btn btn-primary" onclick="openNav()">&#9776;</button>
+    <!-- Add New Vehicle Form -->
+    <div class="content">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h2>Add New Vehicle</h2>
+                <form action="addtrucks.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="truckname">Truck Name</label>
+                                <input type="text" class="form-control" name="truckname" placeholder="Truck Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="truckid">Truck ID</label>
+                                <input type="text" class="form-control" name="truckid" placeholder="Truck ID" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="driversname">Driver's Name</label>
+                                <input type="text" class="form-control" name="driversname" placeholder="Driver's Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="capacity">Capacity (Liters)</label>
+                                <input type="number" class="form-control" name="capacity" placeholder="Capacity (Liters)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="driverphone">Driver's Phone</label>
+                                <input type="text" class="form-control" name="driverphone" placeholder="Driver's Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="depot">Depot</label>
+                                <input type="text" class="form-control" name="depot" placeholder="Depot" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary mt-3" name="add_vehicle" value="Save Vehicle">
+                </form>
+            </div>
+              </div>
+    </div>
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Fuel Delivery System</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>FDS SYSTEM</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="Blog.html" class="link">Blog</a></li>
+                <li><a href="services.html" class="link">Services</a></li>
+                <li><a href="about.html" class="link active">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="form.html">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="fullsite_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#fullsite_carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#fullsite_carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#fullsite_carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="img/banner1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1>Welcome to Fuel Delivery System</h1>
+                    <p>Your trusted partner for reliable and on-demand fuel delivery.</p>
+                    <a href="form.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/banner1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1>Reliable Fuel Delivery</h1>
+                    <p>Delivering fuel to your location swiftly and safely.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/banner1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1>Fast and Efficient Service</h1>
+                    <p>Ensuring your fuel needs are met with speed and efficiency.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#fullsite_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fullsite_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Features</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-gas-pump bx-lg mb-3"></i>
+                    <h3>Reliable Fuel Delivery</h3>
+                    <p>Get fuel delivered to your location with a simple request.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-tachometer bx-lg mb-3"></i>
+                    <h3>Fast Service</h3>
+                    <p>Experience quick response times, ensuring your needs are met efficiently.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-shield bx-lg mb-3"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Make payments safely through our secure gateway.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">How It Works</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-map bx-lg mb-3"></i>
+                    <h3>Step 1: Select Location</h3>
+                    <p>Share your location to find the nearest fuel provider.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-cart bx-lg mb-3"></i>
+                    <h3>Step 2: Place Order</h3>
+                    <p>Choose your fuel type and quantity, then place your order.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bx bx-car bx-lg mb-3"></i>
+                    <h3>Step 3: Delivery</h3>
+                    <p>Receive fuel at your doorstep quickly and safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container text-center">
+            <h2>What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Fuel Delivery System has saved me so much time. The service is fast and convenient!"</p>
+                        <footer class="blockquote-footer">Alex J.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"I love how easy it is to get fuel delivered. Highly recommended!"</p>
+                        <footer class="blockquote-footer">Maria K.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" placeholder="Your Email" required class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" rows="5" placeholder="Your Message" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Fuel Delivery System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
